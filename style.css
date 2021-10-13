@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+  font-family: Lato;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* ======= page-header ======= */
+.page-header {
+  width: 100%;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 18px 0;
+  box-sizing: border-box;
+  background: #222222;
+}
+.page-header button {
+  display: block;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.page-header svg {
+  width: 100%;
+  height: 100%;
+  fill: #E8E8E8;
+}
+.page-header-wrp-btn {
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* border: 1px solid green; */
+}
+.page-header-wrp-btn:nth-child(2) {
+  width: 168px;
+}
+
+/* === page-header-logo === */
+.page-header-logo {
+  display: block;
+  width: 44px;
+  height: 38px;
+  /* border: 1px solid #fff; */
+  text-decoration: none;
+  color: #fff;
+}
+.page-header-logo:hover img {
+  filter: brightness(30%);
+}
+.page-header-logo:active img {
+  filter: brightness(10%);
+}
+/* === end page-header-logo === */
+
+
+/* === page-header-search-form === */
+.page-header-search-form {
+  width: 26px;
+  min-height: 26px;
+  /* border: 1px solid #fff; */
+  position: relative;
+}
+.page-header-search-form:hover svg {
+  fill: orange;
+}
+.page-header-search-btn {
+  width: 0;
+  min-height: 0;
+  padding: 5px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: -1px;
+  left: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial;
+  text-transform: capitalize;
+}
+.page-header-search-btn:focus {
+  width: 150px;
+  min-height: 20px;
+  transition: width 1s ease;
+  border: 2px solid #fff;
+}
+.page-header-search-btn:focus ~ label> svg {
+  fill: green;
+}
+.page-header-search-btn:active ~ label> svg {
+  fill: red;
+}
+/* === end page-header-search-form === */
+
+
+/* === mobile btn === */
+.menu-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #fff;
+}
+.menu-btn:hover span,
+.menu-btn:hover span::before,
+.menu-btn:hover span::after{
+  background-color: orange;
+}
+.menu-btn:active span,
+.menu-btn:active span::before,
+.menu-btn:active span::after{
+  background-color: red;
+}
+.menu-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.menu-btn span::after {
+  top: 10px;
+}
+/* === end mobile btn === */
+
+
+/* === account-btn === */
+.account-btn svg {
+  width: 29px;
+  height: 29px;
+}
+.account-btn:hover svg {
+  fill: orange;
+}
+.account-btn:active svg {
+  fill: red;
+}
+/* === end account-btn === */
+
+
+/* === cart-btn === */
+.cart-btn svg {
+  width: 32px;
+  height: 29px;
+}
+.cart-btn:hover svg {
+  fill: orange
+}
+.cart-btn:active svg {
+  fill: red;
+}
+/* === end cart-btn === */
+/* ======= end page-header ======= */
+
+
+/* ======= page-header-banner ======= */
+.page-header-banner {
+  width: 100%;
+  min-height: 764px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #F1E4E6;
+  background-image: url('https://i.postimg.cc/nh71xLyT/Layer-57-removebg-preview-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  /* border: 3px solid red; */
+}
+.page-header-banner:hover {
+  filter: brightness(50%);
+}
+.page-header-banner-wrp {
+  width: 377px;
+  margin: 0 100px 90px 0;
+  /* border: 1px solid #000; */
+  text-transform: uppercase;
+  position: relative;
+}
+.page-header-banner-wrp:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 92px;
+  background-color: #F16D7F;
+  position: absolute;
+  top: 0;
+  left: -28px;
+}
+.page-header-banner-title {
+  display: block;
+  width: 100%;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 57.6px;
+  color: #222222;
+}
+.page-header-banner-subtitle {
+  display: block;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+/* ======= end page-header-banner ======= */
+
+
+
+/* ======= categories ======= */
+
+/* ======= end categories ======= */
+
+
+
+
+
+.padding-site {
+  padding-left: 14.375%;
+  padding-right: 14.375%;
+  box-sizing: border-box;
+}
